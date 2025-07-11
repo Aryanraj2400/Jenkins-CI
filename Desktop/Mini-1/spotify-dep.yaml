@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spotify-dep
+  namespace: front-end-app
+  labels:
+    app: spotify-ui
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spotify-ui
+  template:
+    metadata:
+      labels:
+        app: spotify-ui
+    spec:
+      containers:
+        - name: spotify-ui
+          image: aryanraj2400/spotify-clone
+          ports:
+            - containerPort: 80

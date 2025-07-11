@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Music Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #1DB954;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1DB954;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(to bottom, #1DB954 0%, #121212 60%);
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #f1f1f1;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .cards-section {
+      padding: 60px 40px;
+    }
+
+    .cards-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background-color: #181818;
+      border-radius: 16px;
+      overflow: hidden;
+      padding: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin-top: 12px;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background-color: #000;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Spotify</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Premium</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Feel the Music 🎧</h1>
+    <p>Discover your next favorite track. Stream millions of songs and playlists for free.</p>
+  </section>
+
+  <section class="cards-section">
+    <h2 class="cards-title">Top Albums</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1598387992613-f7fbd7d3fbb3?auto=format&fit=crop&w=400&h=400&q=80" alt="Album Cover">
+        <h3>Midnight Beats</h3>
+        <p>Lo-fi vibes</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=400&h=400&q=80" alt="Album Cover">
+        <h3>Golden Hour</h3>
+        <p>Chill Pop</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae?auto=format&fit=crop&w=400&h=400&q=80" alt="Album Cover">
+        <h3>Retro Drive</h3>
+        <p>80s Synth</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=400&h=400&q=80" alt="Album Cover">
+        <h3>Jazz Cafe</h3>
+        <p>Instrumental Chill</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1527359241161-77df98f9b99b?auto=format&fit=crop&w=400&h=400&q=80" alt="Album Cover">
+        <h3>Indie Essentials</h3>
+        <p>New & Upcoming</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=400&h=400&q=80" alt="Album Cover">
+        <h3>Rock Reloaded</h3>
+        <p>All Time Greats</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Spotify Clone UI – Built for you 🎶
+  </footer>
+
+</body>
+</html>
